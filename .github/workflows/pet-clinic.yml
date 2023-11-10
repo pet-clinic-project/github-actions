@@ -15,9 +15,14 @@ jobs:
       with:
         ref: develop
     
-    - name: Checkout Repository
+    - name: Checkout Pet-clinic Repository
       run: git clone https://github.com/spring-projects/spring-petclinic.git
 
+    - name: Build with Maven
+      run: |
+        cd spring-petclinic
+        mvn clean install
+
     - name: Build Docker Image
-      run: docker build -t pet-clinic:0.2 .
+      run: docker build -t pet-clinic:0.3 .
 

@@ -16,5 +16,5 @@ jobs:
         ref: develop
 
     - name: Build Docker Image
-      run: docker build -t pet-clinic:0.1 -f workflows/Dockerfile .
+      run: docker build -t pet-clinic:0.1 .
 

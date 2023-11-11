@@ -10,7 +10,7 @@ jobs:
     runs-on: demo
     container:
       image: 814200988517.dkr.ecr.us-west-2.amazonaws.com/base-image:java-jdk-17-agent-1.0.22
-      options: --volume $HOME/.m2:/root/.m2 --user root
+      options: --volume /home/ubuntu/.m2:/root/.m2 --user root
 
     steps:
     - name: Checkout Repository

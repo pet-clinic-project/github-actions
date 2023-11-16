@@ -3,7 +3,7 @@ name: Build Docker Image
 on:
   push:
     branches:
-      - develop
+      - main
 
 jobs:
   build:
@@ -15,7 +15,7 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v2
       with:
-        ref: develop
+        ref: main
     
     - name: Checkout Pet-clinic Repository
       run: git clone https://github.com/spring-projects/spring-petclinic.git

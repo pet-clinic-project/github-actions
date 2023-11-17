@@ -15,5 +15,5 @@ jobs:
       with:
         ref: main
 
-    - name: Test Workflow
-      run: echo "GitHub Actions workflow is working"
+    - name: Create Folder
+      run: mkdir ~/test

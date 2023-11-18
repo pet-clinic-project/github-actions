@@ -9,8 +9,7 @@ jobs:
   build:
     runs-on: demo
     container:
-      image: public.ecr.aws/m1n8x9y9/techiescamp-repo:latest
-
+      image: ubuntu:latest
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2

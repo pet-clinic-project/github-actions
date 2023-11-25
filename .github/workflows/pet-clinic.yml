@@ -17,4 +17,4 @@ jobs:
         ref: main
 
     - name: Echo Message
-      run: echo "Hello World"
+      run: echo "Hello World!"

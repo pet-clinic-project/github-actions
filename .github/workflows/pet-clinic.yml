@@ -9,14 +9,8 @@ jobs:
   build:
     runs-on: self-hosted
     container:
-      image: ubuntu:latest
+      image: 814200988517.dkr.ecr.us-west-2.amazonaws.com/base-image:java-jdk-17-agent-1.0.23
 
     steps:
-    
-    - name: Checkout Repository
-      uses: actions/checkout@v2
-      with:
-        ref: main
-
     - name: Create Folder
-      run: mkdir ~/test
+      run: mkdir test

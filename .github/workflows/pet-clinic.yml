@@ -13,4 +13,4 @@ jobs:
 
     steps:
     - name: Create Folder
-      run: mkdir ~/test
+      run: mkdir /home/actions-testing

@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: self-hosted
     container:
-      image: ubuntu:latest
+      image: public.ecr.aws/m1n8x9y9/techiescamp-repo
 
 
     steps:

@@ -7,11 +7,15 @@ on:
 
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: demo
     container:
-      image: public.ecr.aws/m1n8x9y9/techiescamp-repo
-
+      image: ubuntu:latest
 
     steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+      with:
+        ref: main
+
     - name: Create Folder
       run: mkdir ~/test

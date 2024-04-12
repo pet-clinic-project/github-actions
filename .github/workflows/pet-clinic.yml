@@ -9,8 +9,8 @@ jobs:
   build:
     runs-on: self-hosted
     container:
-      image: 814200988517.dkr.ecr.us-west-2.amazonaws.com/base-image:java-jdk-17-agent-1.0.23
+      image: ubuntu:latest
 
     steps:
     - name: Create Folder
-      run: mkdir test
+      run: mkdir ~/test

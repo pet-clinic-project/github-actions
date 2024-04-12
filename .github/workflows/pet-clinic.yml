@@ -16,4 +16,4 @@ jobs:
       run: mkdir actions-testing
 
     - name: Create Folder
-      run: sleep 20s
+      run: sleep 20m

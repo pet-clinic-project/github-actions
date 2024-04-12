@@ -7,14 +7,13 @@ on:
 
 jobs:
   build:
-    runs-on: eks_runner
-    container:
-      image: ubuntu:latest
+    runs-on: self-hosted
+
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
       with:
         ref: main
 
-    - name: Echo Message
-      run: echo "Hello World!"
+    - name: Create Folder
+      run: mkdir ~/test

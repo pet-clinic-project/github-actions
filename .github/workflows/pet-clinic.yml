@@ -7,11 +7,11 @@ on:
 
 jobs:
   docker:
-    runs-on: test_runner
+    runs-on: eks-runner
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-        
+
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
@@ -28,4 +28,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: 767397914705.dkr.ecr.us-west-2.amazonaws.com/test-image:1.0.0
+          tags: 767397914705.dkr.ecr.us-west-2.amazonaws.com/test-image:2.0.0
